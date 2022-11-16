@@ -1,0 +1,189 @@
+
+$main-font: 'Montserrat', sans-serif;
+$primary-color:rgb(223, 237, 255);
+$main-gradient: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $main-font;
+    
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 7vh;
+    font-family: $main-font;
+    background: $main-gradient;     
+    font-style: italic;
+    position: sticky;
+    top:0;
+
+    div{
+        padding: 10px;
+    }
+
+    .logo{
+        width: 30vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .links {
+        width: 70vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    h1{
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    a{ 
+        font-size: 1.3rem;    
+        color: black;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-font;
+    gap: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: $primary-color;   
+
+    h1{
+        font-size: 3em;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 12vh;
+        	
+        i{
+            font-size: 2em;
+        }
+        a{
+            background-color: $primary-color;
+            padding: 10px;
+            font-size: 1.4em;
+            color: black;
+            border-radius: 10px;
+            background: $main-gradient;
+            transition: all ease 0.5s;
+        }
+
+        a:hover{
+            transform: scale(1.04);
+        }
+    }
+}
+
+.overmij{
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+
+    .text{
+        width: 40vw;
+        height: 50vh;
+        background: #0082c8;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        h1{
+            font-size: 3em;
+            text-decoration: underline;
+            color: white;
+        }
+        p{
+            font-size: 2em;
+            color: white;
+        }
+    }
+
+    img{
+        height: 52.5vh;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: $primary-color;
+    }
+}
+
+.projecten{
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+
+    .projectenHeader{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+        align-items: center;
+        
+        div:nth-of-type(1){
+            background-image: url(https://picsum.photos/200);
+            height: 35vh;
+            width:20vw;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover
+        }
+
+        div{
+            background-color: black;
+            height: 35vh;
+            width:20vw;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover
+        }
+    }
+}
