@@ -71,6 +71,9 @@ body {
   width: 100vw;
   background-color: #333F73;
 }
+.overmij img {
+  height: 25vh;
+}
 
 .projecten {
   height: 92vh;
