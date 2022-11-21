@@ -1,15 +1,118 @@
 
-$main-font: 'Montserrat', sans-serif;
-$primary-color:rgb(223, 237, 255);
-$main-gradient: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+// #333F73
+// #A9AABC
+// #757687
+// #712B32
+// #A85C60
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    user-select: none;
     scroll-behavior: smooth;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
+
+
+nav{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    z-index: 10;
+    background-color: #666EA7;
+    a{
+        color: #ECEEFF;
+        transition: all ease 0.3s;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+body{
+    background-color: #333F73;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    width: 60vw;
+    height: 80vh;
+    background-color: #333F73;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    left: 15vw;
+    
+    h1{
+        color: #ECEEFF;
+        font-size: 3.5em;
+    }
+    p{
+        color: #ECEEFF;
+        font-size: 1.3em;
+        padding-bottom: 5vh;
+    }
+    a{
+        padding: 0.7em;
+        color: #666EA7;
+        font-size: 1em;
+        border-radius: 10px;
+        border: 1px solid #ECEEFF;
+        background-color: #ECEEFF;
+        transition: all ease 0.3s;
+        font-weight: bold;
+    }
+
+    a:hover{
+        background-color: #666EA7;
+        color: #ECEEFF;
+    }
+}
+
+.overmij{
+    height: 92vh;
+    width: 100vw;
+    background-color: #333F73;
+}
+
+.projecten{
+    height: 92vh;
+    width: 100vw;
+    background-color: #333F73;
+}
+
+.contact{
+    width: 15vw;
+    height: 10vh;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #666EA7;
+    font-size: 3.5em;
+    padding: 5px;
+    border-radius: 10px;
+
+    a{
+        display: flex;
+        align-items: center;
+        color: #ECEEFF;
+        transition: all ease 0.3s;
+        
+    }
+    a:hover{
+        color: #333F73;
+    }
+}
