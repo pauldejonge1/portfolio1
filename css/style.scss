@@ -16,7 +16,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 nav{
     height: 8vh;
@@ -83,16 +85,89 @@ body{
     height: 92vh;
     width: 100vw;
     background-color: #333F73;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 
-    img{
-        height: 25vh;
+    h2{
+        color: #333F73;
+        font-size: 2em;
+    }
+
+    li,p{
+        color: #ECEEFF;
+        width: 20vw;
+        font-size: 1.2em;
+    }
+
+    .text{
+        width: 30vw;
+        height: 40vh;
+        background-color: #666EA7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        border-radius: 10px;
+        margin-top: 20vh;
+        h2{
+            position: relative;
+            left: 5vw;
+        }
+        p{
+            position: relative;
+            left: 5vw;
+        }       
+    }
+
+    .skills{
+        background-color: #666EA7;
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+        border-radius: 10px;
     }
 }
 
 .projecten{
-    height: 92vh;
-    width: 100vw;
+    width: 70vw;
     background-color: #333F73;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40vh;
+    h1{
+        color: #ECEEFF;
+    }
+    a{
+        background-color: #ECEEFF;
+        color: #666EA7;
+        transition: all ease 0.5s;
+        border: 1px solid #ECEEFF;
+    }
+    a:hover{
+        background-color: #333F73;
+        color: #ECEEFF;
+
+    }
+
+    .project{
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+
+        a{
+            padding: 1vw;
+            border-radius: 10px;
+            margin-top: 3vh;
+        }
+    }
+
 }
 
 .contact{
