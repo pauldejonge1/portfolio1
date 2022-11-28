@@ -82,7 +82,7 @@ body {
   color: #333F73;
   font-size: 2em;
 }
-.overmij li, .overmij p {
+.overmij li {
   color: #ECEEFF;
   width: 20vw;
   font-size: 1.2em;
@@ -95,17 +95,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  text-align: left;
   border-radius: 10px;
   margin-top: 20vh;
+  padding-left: 5vw;
 }
-.overmij .text h2 {
-  position: relative;
-  left: 5vw;
-}
-.overmij .text p {
-  position: relative;
-  left: 5vw;
+.overmij .text li {
+  padding-bottom: 1vh;
 }
 .overmij .skills {
   background-color: #666EA7;
