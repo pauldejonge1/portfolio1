@@ -89,6 +89,9 @@ body{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
+    span{
+        text-decoration:underline ;
+    }
 
     h2{
         color: #333F73;

@@ -79,6 +79,9 @@ body {
   align-items: baseline;
   justify-content: space-evenly;
 }
+.overmij span {
+  text-decoration: underline;
+}
 .overmij h2 {
   color: #333F73;
   font-size: 2em;
