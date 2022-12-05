@@ -5,6 +5,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+  list-style-type: circle;
 }
 
 body {
@@ -101,6 +102,9 @@ body {
 }
 .overmij .text li {
   padding-bottom: 1vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .overmij .skills {
   background-color: #666EA7;
